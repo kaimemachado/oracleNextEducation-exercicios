@@ -7,7 +7,7 @@ function mostra(frase) {
     pulaLinha();
 }
 
-var numeroPensado = 4;5 //Math.round(Math.random() * 10);
+var numeroPensado = Math.round(Math.random() * 10);
 var chute = parseInt(prompt("Digite seu chute!"));
 
 for (i = 1; i < 3; i++) {
