@@ -1,8 +1,22 @@
-var numeropensado = Math.round(Math.random() * 10);
-
-var chute = prompt("Digite um número: ");
-
-
-while (chute != 3) {
-    parseInt(prompt("Número errado, digite novamente"))
+function pulaLinha() {
+    document.write("<br>");
 }
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+var numeroPensado = 4;5 //Math.round(Math.random() * 10);
+var chute = parseInt(prompt("Digite seu chute!"));
+
+for (i = 1; i < 3; i++) {
+    if (numeroPensado == chute) {
+        mostra ("Você acertou!");
+        break
+    } else {
+        alert ("Tente novamente!")
+        chute = parseInt(prompt("Digite seu chute!"));
+    }
+}
+
